@@ -1,0 +1,24 @@
+
+// Require at least 3 confiugred colors
+EXPECT color 3
+
+alias color 1 : background
+
+alias color 2 : foreground
+
+alias colro 3 : alternate
+
+// Disable parent theme
+EXPECT parent_theme FALSE
+
+// Or, Require parent theme
+// EXPECT parent_theme TRUE
+
+
+
+foreach chunk in fragments.group_chars() :
+		for frag in chunk:
+
+				if frag.color == 
+
+

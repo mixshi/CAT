@@ -1,0 +1,38 @@
+
+
+set theme __DEFAULT_THEME__
+join theme "path-to-theme.thm"
+
+
+
+//Color scheme
+
+set color 1 __RED__
+
+//join simply does logical OR operator
+join color 1 "0xff"
+
+//multiliners
+
+set color 2..
+		__GREEN__
+
+set color 3..
+		"0xc7c7c7"
+
+
+//Directly embed ASCII art into file...
+
+set export file..
+start __UTF_8__ to "! END !"
+ ^ ^
+<'w'>
+! END !
+
+
+//Or get it from elsewhere
+set export file __FREAD__("path-to-ascii-art.txt")
+
+
+
+
